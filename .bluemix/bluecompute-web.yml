@@ -35,9 +35,5 @@ stages:
       application: bluecompute-web-tc
     script: |
       #!/bin/bash
-      cf push "${CF_APP}" -n "${CF_APP}" -d "${DOMAIN}"
-hooks:
-- enabled: true
-  label: null
-  ssl_enabled: false
-  url: https://devops-api.ng.bluemix.net/v1/messaging/webhook/publish
+      cf push "${CF_APP}" -n "${CF_APP}" -d mybluemix.net
+

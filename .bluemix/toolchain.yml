@@ -3,10 +3,10 @@ name: "Omnichannel Toolchain"
 description: "Omnichannel sample application"
 version: 0.2
 required:
- - deploy
- - github
+ - git-bluecompute-web
+ - pipeline-bluecompute-web
 
-refarch-cloudnative-bluecompute-web:
+git-bluecompute-web:
   service_id: githubpublic
   parameters:
     repo_name: "refarch-cloudnative-bluecompute-web"
@@ -15,12 +15,12 @@ refarch-cloudnative-bluecompute-web:
     has_issues: false
   hidden: [form, description]
 
-bluecompute-web-pipeline:
+pipeline-bluecompute-web:
   service_id: pipeline
   parameters:
     name: "bluecompute-web"
     configuration:
-      content: $file(bluecompute-web.yaml)
+      content: $file(bluecompute-web.yml)
       env:
         DOMAIN: "mybluemix.net"
       execute: true
