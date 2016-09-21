@@ -5,7 +5,6 @@ stages:
   - url: https://github.com/ssibm/refarch-cloudnative-bluecompute-web
     type: git
     branch: master
-    dir_name: null
   triggers:
   - type: commit
   jobs:
@@ -22,7 +21,6 @@ stages:
   - type: job
     stage: Build
     job: Build
-    dir_name: null
   triggers:
   - type: stage
   jobs:
@@ -36,4 +34,3 @@ stages:
     script: |
       #!/bin/bash
       cf push "${CF_APP}" -n "${CF_APP}" -d mybluemix.net
-

@@ -2,9 +2,6 @@
 name: "Omnichannel Toolchain"
 description: "Omnichannel sample application"
 version: 0.2
-required:
- - git-bluecompute-web
- - pipeline-bluecompute-web
 
 git-bluecompute-web:
   service_id: githubpublic
