@@ -2,7 +2,7 @@
 stages:
 - name: Build
   inputs:
-  - url: https://github.com/ssibm/refarch-cloudnative-bluecompute-web
+  - service: ${REPO}
     type: git
     branch: master
   triggers:
