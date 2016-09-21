@@ -16,21 +16,3 @@ stages:
     script: |-
       #!/bin/bash
       npm install
-- name: Deploy
-  inputs:
-  - type: job
-    stage: Build
-    job: Build
-  triggers:
-  - type: stage
-  jobs:
-  - name: Deploy
-    type: deployer
-    target:
-      region_id: "ibm:yp:us-south"
-      organization: "simon_kaegi@ca.ibm.com"
-      space: "dev"
-      application: "bluecompute-web-tc"
-    script: |-
-      #!/bin/bash
-      cf push "${CF_APP}" -n "${CF_APP}" -d "${DOMAIN}"
