@@ -22,4 +22,8 @@ pipeline-bluecompute-web:
       env:
        DOMAIN: "mybluemix.net"
        REPO: "git-bluecompute-web"
+       REGION: "{{region}}"
+       ORG: "{{organization}}"
+       SPACE: "{{space}}"
+       APP: "{{git-bluecompute-web.parameters.repo_name}}"
       execute: true
