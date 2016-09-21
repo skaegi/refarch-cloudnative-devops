@@ -31,10 +31,10 @@ stages:
   - name: Deploy
     type: deployer
     target:
-      region_id: "ibm:yp:us-south"
-      organization: "simon_kaegi@ca.ibm.com"
-      space: "dev"
-      application: "bluecompute-web-tc"
+      region_id: ${REGION}
+      organization: ${ORG}
+      space: ${SPACE}
+      application: ${APP}
     script: |-
       #!/bin/bash
       cf push "${CF_APP}" -n "${CF_APP}" -d "${APP_DOMAIN}"
