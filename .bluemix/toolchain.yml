@@ -24,5 +24,3 @@ pipeline-bluecompute-web:
       env:
         DOMAIN: "mybluemix.net"
       execute: true
-
-  hidden: [form, description]
