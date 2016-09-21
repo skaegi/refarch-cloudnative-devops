@@ -1,8 +1,7 @@
 ---
-default_locale: en
 name: "Omnichannel Toolchain"
 description: "Omnichannel sample application"
-version: 0.1
+version: 0.2
 required:
  - deploy
  - github
@@ -23,6 +22,7 @@ bluecompute-web-pipeline:
     configuration:
       content: $file(bluecompute-web.yaml)
       env:
+        DOMAIN: "mybluemix.net"
       execute: true
 
   hidden: [form, description]
