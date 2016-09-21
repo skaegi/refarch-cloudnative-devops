@@ -31,6 +31,6 @@ stages:
       organization: sreenivas@us.ibm.com
       space: toolchain
       application: bluecompute-web-tc
-    script: |
+    script: |-
       #!/bin/bash
       cf push "${CF_APP}" -n "${CF_APP}" -d "${DOMAIN}"
