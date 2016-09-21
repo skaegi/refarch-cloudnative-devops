@@ -10,7 +10,7 @@ refarch-cloudnative-bluecompute-web:
   service_id: githubpublic
   parameters:
     repo_name: "refarch-cloudnative-bluecompute-web"
-    repo_url: "https://github.com/ssibm/refarch-cloudnative-bluecompute-web"
+    repo_url: "https://github.com/ibm-cloud-architecture/refarch-cloudnative-bluecompute-web"
     type: clone
     has_issues: false
   hidden: [form, description]
