@@ -1,17 +1,12 @@
 ---
 stages:
-- name: Build
+- name: BUILD
   inputs:
-  - url: https://github.com/ssibm/refarch-cloudnative-bluecompute-web
-    type: git
+  - type: git
     branch: master
+    service: "my sample service"
   triggers:
   - type: commit
   jobs:
   - name: Build
     type: builder
-    working_dir: StoreWebApp
-    build_type: npm
-    script: |-
-      #!/bin/bash
-      npm install
