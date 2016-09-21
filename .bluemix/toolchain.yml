@@ -19,7 +19,7 @@ pipeline-bluecompute-web:
   parameters:
     name: "bluecompute-web"
     configuration:
-      content: $file(bluecompute-web.yml)
+      content: $file(bluecompute-web.pipeline.yml)
       env:
         DOMAIN: "mybluemix.net"
       execute: true
