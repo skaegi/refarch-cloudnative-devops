@@ -28,8 +28,8 @@ stages:
     type: deployer
     target:
       region_id: "ibm:yp:us-south"
-      organization: "sreenivas@us.ibm.com"
-      space: "toolchain"
+      organization: "simon_kaegi@ca.ibm.com"
+      space: "dev"
       application: "bluecompute-web-tc"
     script: |-
       #!/bin/bash
