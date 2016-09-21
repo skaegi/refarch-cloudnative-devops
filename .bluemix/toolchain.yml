@@ -21,4 +21,5 @@ pipeline-bluecompute-web:
       content: $file(pipeline.yml)
       env:
        DOMAIN: "mybluemix.net"
+       REPO: "git-bluecompute-web"
       execute: true
