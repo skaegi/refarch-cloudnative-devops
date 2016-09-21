@@ -2,7 +2,7 @@
 stages:
 - name: Build
   inputs:
-  - url: https://github.com/ibm-cloud-architecture/refarch-cloudnative-bluecompute-web
+  - url: https://github.com/ssibm/refarch-cloudnative-bluecompute-web
     type: git
     branch: master
     dir_name: null
