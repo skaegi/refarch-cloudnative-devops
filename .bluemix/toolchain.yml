@@ -8,15 +8,16 @@ git-bluecompute-web:
   parameters:
     repo_name: "refarch-cloudnative-bluecompute-web"
     repo_url: "https://github.com/ssibm/refarch-cloudnative-bluecompute-web"
-    type: existing
+    type: "existing"
     has_issues: false
   
 pipeline-bluecompute-web:
   service_id: pipeline
   parameters:
     name: "bluecompute-web"
+    ui-pipeline: true
     configuration:
-      content: $file(bluecompute-web.pipeline.yml)
+      content: $file(pipeline.yml)
       env:
-        DOMAIN: "mybluemix.net"
+       DOMAIN: "mybluemix.net"
       execute: true
